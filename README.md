@@ -14,12 +14,35 @@ Financial fraud detection presents significant challenges due to class imbalance
 
 This project investigates whether these quantum advantages can be leveraged to improve fraud detection accuracy and efficiency.
 
+## Dataset Information
+
+The project utilizes the **Bank Account Fraud Dataset** from Kaggle (NeurIPS 2022) with the following characteristics:
+
+**Dataset Source**: [Bank Account Fraud Dataset - NeurIPS 2022](https://www.kaggle.com/datasets/sgpjesus/bank-account-fraud-dataset-neurips-2022)
+
+**Dataset Characteristics:**
+- **Dataset Size**: 1,000,000 transaction records
+- **Features**: 32 attributes including financial, behavioral, demographic, and digital features
+- **Target Variable**: Binary fraud indicator (`fraud_bool`)
+- **Class Distribution**: Highly imbalanced (~1.1% fraud cases)
+- **File Size**: ~200MB (CSV format)
+- **Original Purpose**: Created for NeurIPS 2022 research on fraud detection
+
+**Key Feature Categories:**
+- **Financial**: Income, credit risk score, proposed credit limit, intended balance amount
+- **Behavioral**: Transaction velocities (6h, 24h, 4w), session length, device usage patterns
+- **Demographic**: Customer age, employment status, housing status, address history
+- **Digital**: Device OS, email characteristics, phone validation, session behavior
+- **Temporal**: Days since request, monthly patterns, historical activity metrics
+
+*This dataset represents a realistic simulation of bank account opening fraud scenarios and is specifically designed for machine learning research in financial fraud detection.*
+
 ## Repository Structure
 
 ```
 Project1/
 ├── dataset/                  # Financial transaction dataset
-│   ├── Base.csv              # Main dataset file
+│   ├── Base.csv              # Main dataset file (1M records)
 │   └── Base.csv.zip          # Compressed version of dataset
 ├── docs/                     # Project documentation
 │   └── Project-1-Zero_review_QML.pdf  # Technical review document
@@ -142,6 +165,7 @@ This project demonstrates the application of quantum machine learning techniques
 
 ## References
 
+- **Dataset**: Bank Account Fraud Dataset - NeurIPS 2022. Available at: [https://www.kaggle.com/datasets/sgpjesus/bank-account-fraud-dataset-neurips-2022](https://www.kaggle.com/datasets/sgpjesus/bank-account-fraud-dataset-neurips-2022)
 - PennyLane Documentation: [https://pennylane.ai/](https://pennylane.ai/)
 - Quantum Machine Learning: [https://arxiv.org/abs/1611.09347](https://arxiv.org/abs/1611.09347)
 - Financial Fraud Detection with Machine Learning: [https://arxiv.org/abs/1911.05109](https://arxiv.org/abs/1911.05109)
