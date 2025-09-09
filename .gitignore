@@ -87,6 +87,8 @@ data/raw/*
 results/
 logs/
 *.log
+# Large dataset files
+dataset/Base.csv
 
 # Quantum simulator cache
 .qiskit/
